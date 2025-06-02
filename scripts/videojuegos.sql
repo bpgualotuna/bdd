@@ -32,4 +32,8 @@ values(129,'Fall Guys',5)
 insert into videojuegos(codigo,nombre,valoracion)
 values(120,'GTA V',5)
 
-select * from videojuegos
+select * from videojuegos where nombre like 'C%'
+
+select * from videojuegos where valoracion between 9 and 10
+
+select * from videojuegos where descripcion is null

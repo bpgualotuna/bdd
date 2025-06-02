@@ -1,0 +1,45 @@
+--Creacion tabla registros_entrada
+create table registros_entrada (
+	codigo_registro int not null,
+	cedula_empleado char(10) not null,
+	fecha date not null,
+	hora time not null,
+	constraint codigo_registro_pk primary key (codigo_registro)
+)
+drop table registros_entrada
+
+insert into registros_entrada (codigo_registro,cedula_empleado,fecha,hora)
+values(123,'1725914236','09/01/2000','07:00')
+
+insert into registros_entrada (codigo_registro,cedula_empleado,fecha,hora)
+values(223,'1725914232','09/02/2000','08:30')
+
+insert into registros_entrada (codigo_registro,cedula_empleado,fecha,hora)
+values(323,'1725914233','09/03/2000','08:20')
+
+insert into registros_entrada (codigo_registro,cedula_empleado,fecha,hora)
+values(423,'1725914234','09/04/2000','08:10')
+
+insert into registros_entrada (codigo_registro,cedula_empleado,fecha,hora)
+values(523,'1725914235','09/05/2000','08:00')
+
+insert into registros_entrada (codigo_registro,cedula_empleado,fecha,hora)
+values(623,'1725914231','09/06/2000','07:50')
+
+insert into registros_entrada (codigo_registro,cedula_empleado,fecha,hora)
+values(723,'1725914237','09/07/2000','07:40')
+
+insert into registros_entrada (codigo_registro,cedula_empleado,fecha,hora)
+values(823,'1725914238','09/08/2000','07:30')
+
+insert into registros_entrada (codigo_registro,cedula_empleado,fecha,hora)
+values(923,'1725914239','09/09/2000','07:20')
+
+insert into registros_entrada (codigo_registro,cedula_empleado,fecha,hora)
+values(023,'1725914230','09/10/2000','07:10')
+
+select cedula_empleado,fecha,hora from registros_entrada
+
+select * from registros_entrada where hora between '07:00' and '14:00'
+
+select * from registros_entrada where hora > '08:00'

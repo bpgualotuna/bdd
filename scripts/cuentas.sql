@@ -38,4 +38,8 @@ values ('12347','54328','12/07/2008',900.0)
 insert into cuentas (numero_cuenta,cedula_propietario,fecha_creacion,saldo)
 values ('12346','54327','12/10/2008',2300.0)
 
-select * from cuentas
+select numero_cuenta,saldo from cuentas 
+
+select * from cuentas where fecha_creacion between '01/06/2025' and '01/04/2025'
+
+select numero_cuenta,saldo from cuentas where fecha_creacion between '01/06/2025' and '01/04/2025'

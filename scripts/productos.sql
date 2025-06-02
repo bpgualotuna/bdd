@@ -34,4 +34,9 @@ values (129,'chicles',0.15,30)
 insert into productos(codigo,nombre,precio,stock)
 values (120,'chupetes',0.50,50)
 
-select * from productos
+select * from productos where nombre like 'q%'
+
+select * from productos where descripcion is null
+
+select * from productos where precio between money(2) and money(3)
+

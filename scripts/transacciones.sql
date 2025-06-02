@@ -39,4 +39,8 @@ values(9,'12348',50,'C','12/12/2000','12:21')
 insert into transacciones (codigo,numero_cuenta,monto,tipo,fecha,hora)
 values(0,'12349',50,'D','12/12/2000','12:21')
 
-select * from transacciones
+select * from transacciones where tipo = 'D'
+
+select * from transacciones where monto between money(200) and money(2000)
+
+select codigo,monto,tipo,fecha from transacciones where fecha is not null
