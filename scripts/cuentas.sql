@@ -43,3 +43,7 @@ select numero_cuenta,saldo from cuentas
 select * from cuentas where fecha_creacion between '01/06/2025' and '01/04/2025'
 
 select numero_cuenta,saldo from cuentas where fecha_creacion between '01/06/2025' and '01/04/2025'
+
+select * from cuentas
+
+update cuentas set saldo = money(10) where cedula_propietario like '17%'

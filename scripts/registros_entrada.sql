@@ -43,3 +43,8 @@ select cedula_empleado,fecha,hora from registros_entrada
 select * from registros_entrada where hora between '07:00' and '14:00'
 
 select * from registros_entrada where hora > '08:00'
+
+select * from registros_entrada
+
+--Consultado, se puede usar Where Month(fecha) = 8, para todos los meses 8
+update registros_entrada set cedula_empleado = '082345679' where fecha between '2024-08-01' and '2024-08-31'
