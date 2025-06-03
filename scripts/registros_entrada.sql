@@ -48,3 +48,5 @@ select * from registros_entrada
 
 --Consultado, se puede usar Where Month(fecha) = 8, para todos los meses 8
 update registros_entrada set cedula_empleado = '082345679' where fecha between '2024-08-01' and '2024-08-31'
+
+delete from registros_entrada where fecha between '2025/06/01' and '2025/06/30'
