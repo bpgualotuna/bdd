@@ -24,22 +24,23 @@ create table profesores(
 insert into profesores(codigo,nombre)
 values(123,'Francisco')
 
+delete from estudiantes
 
-insert into estudiantes(cedula,nombre,apellido,email)
-values(1234,'Brayan','Gualotuna','1234')
+insert into estudiantes(cedula,nombre,apellido,email,codigo_profesor)
+values(1234,'Brayan','Gualotuna','1234',123);
 insert into estudiantes(cedula,nombre,apellido,email)
 values(9234,'Kevin','Gualotuna','1234');
 insert into estudiantes(cedula,nombre,apellido,email)
 values(8234,'Bra','Gualotuna','1234');
-insert into estudiantes(cedula,nombre,apellido,email)
-values(7234,'Stalyn','Gualotuna','1234');
+insert into estudiantes(cedula,nombre,apellido,email,codigo_profesor)
+values(7234,'Stalyn','Gualotuna','1234',123);
 insert into estudiantes(cedula,nombre,apellido,email)
 values(6234,'Jenniffer','Gualotuna','1234');
-insert into estudiantes(cedula,nombre,apellido,email)
-values(5234,'Said','Gualotuna','1234');
+insert into estudiantes(cedula,nombre,apellido,email,codigo_profesor)
+values(5234,'Said','Gualotuna','1234',123);
 insert into estudiantes(cedula,nombre,apellido,email)
 values(4234,'Alberto','Gualotuna','1234');
-insert into estudiantes(cedula,nombre,apellido,email)
-values(3234,'Juan','Gualotuna','1234');
+insert into estudiantes(cedula,nombre,apellido,email,codigo_profesor)
+values(3234,'Juan','Gualotuna','1234',123);
 insert into estudiantes(cedula,nombre,apellido,email)
 values(2234,'Pedro','Gualotuna','1234');

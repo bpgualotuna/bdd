@@ -20,6 +20,7 @@ create table prestamo(
 	references persona(cedula)
 )
 drop table prestamo
+drop table persona
 --creacion persona
 insert into persona(cedula,nombre,apellido,fecha_nacimiento)
 values('1234567890','Sean','Albeira','2000/03/14');
@@ -28,17 +29,19 @@ values('1234567891','Jenniffer','Albeira','2000/03/14');
 insert into persona(cedula,nombre,apellido,fecha_nacimiento)
 values('1234567892','Brayan','Albeira','2000/03/14');
 --creacion prestamo
-insert into prestamo(cedula)
-values('1234567890');
-insert into prestamo(cedula)
-values('1234567891');
-insert into prestamo(cedula)
-values('1234567890');
-insert into prestamo(cedula)
-values('1234567891');
-insert into prestamo(cedula)
-values('1234567892');
-insert into prestamo(cedula)
-values('1234567892');
-insert into prestamo(cedula)
-values('1234567892');
+delete from prestamo
+
+insert into prestamo(cedula,monto)
+values('1234567890',900);
+insert into prestamo(cedula,monto)
+values('1234567891',1000);
+insert into prestamo(cedula,monto)
+values('1234567890',120);
+insert into prestamo(cedula,monto)
+values('1234567891',500);
+insert into prestamo(cedula,monto)
+values('1234567892',300);
+insert into prestamo(cedula,monto)
+values('1234567892',200);
+insert into prestamo(cedula,monto)
+values('1234567892',150.0);

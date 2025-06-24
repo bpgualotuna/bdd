@@ -17,7 +17,7 @@ values(223,'12345',150.0,'C');
 insert into transacciones (codigo,numero_cuenta,monto,tipo)
 values(323,'12345',510.0,'C');
 insert into transacciones (codigo,numero_cuenta,monto,tipo)
-values(423,'12345',501.0,'C');
+values(523,'22003',501.0,'C');
 
 create table banco(
 	codigo_banco int,
@@ -39,4 +39,4 @@ values(4,123);
 insert into banco(codigo_banco,codigo_transaccion)
 values(5,123);
 insert into banco(codigo_banco,codigo_transaccion)
-values(6,123);
+values(7,523);
